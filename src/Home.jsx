@@ -9,7 +9,7 @@ function Homepage() {
         
   useEffect(() => {
     axios
-      .get("https://chatwave-x4y9.onrender.com")
+      .get("https://chatwave-x4y9.onrender.com/users")
       .then((response) => {
         setUsers(response.data);
       })
