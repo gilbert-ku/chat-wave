@@ -159,12 +159,12 @@ function AuthForm() {
     try {
       if (isLoginMode) {
         // Handle login
-        const response = await axios.post("http://127.0.0.1:5000/login", { username, password });
+        const response = await axios.post("https://chatwave-x4y9.onrender.com", { username, password });
         console.log("Login successful:", response.data);
         navigate("/chatroom");
       } else {
         // Handle signup
-        const response = await axios.post("http://127.0.0.1:5000/users", { username, email, password });
+        const response = await axios.post("https://chatwave-x4y9.onrender.com", { username, email, password });
         console.log("User created:", response.data);
         navigate("/chatroom");
       }

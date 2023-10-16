@@ -23,7 +23,7 @@ function SignupForm() {
 
     // Send a POST request to your backend to create a new user
     axios
-      .post("http://127.0.0.1:5000/users", {
+      .post("https://chatwave-x4y9.onrender.com", {
         username,
         email,
         password, // You may need to add password to the request body

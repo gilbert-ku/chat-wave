@@ -9,7 +9,7 @@ const Chatroom = () => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io('http://localhost:5000');
+    const newSocket = io('https://chatwave-x4y9.onrender.com');
     setSocket(newSocket);
 
     // Generate a unique user ID
